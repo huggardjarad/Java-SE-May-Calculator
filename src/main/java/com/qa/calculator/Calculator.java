@@ -1,32 +1,39 @@
 package com.qa.calculator;
 
-public class Calculator {
+import Functions.Adder;
+import Functions.Divider;
+import Functions.Multiplier;
+import Functions.Subtracter;
 
-	public int add(int num1, int num2) {
+
+public class Calculator {
+	
+
+	public double add(double num1, double num2) {
 		
 		Adder adder = new Adder();
 		
-		return adder.add(num1, num2);
+		return adder.editTable(num1, num2);
 		
 	}
-	public int multiply(int num1, int num2) {
+	public double multiply(double num1, double num2) {
 		
 		Multiplier multiplier = new Multiplier();
 		
-		return multiplier.multiply(num1, num2);
+		return multiplier.editTable(num1, num2);
 		
 	}
-	public int subtract(int num1, int num2) {
+	public double subtract(double num1, double num2) {
 		
 		Subtracter subtracter = new Subtracter();
 		
-		return subtracter.subtract(num1, num2);
+		return subtracter.editTable(num1, num2);
 	}
-	public double divide(int num1, int num2) {
+	public double divide(double num1, double num2) {
 		
 		Divider divider = new Divider();
 		
-		return divider.divide(num1, num2);
+		return divider.editTable(num1, num2);
 	}
 
 }
